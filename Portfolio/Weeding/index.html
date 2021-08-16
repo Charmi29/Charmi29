@@ -1,0 +1,929 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Wedding</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+</head>
+	<style>
+		
+		html{
+			scroll-behavior: smooth;
+		}
+		
+		
+		.wrapper{
+			width: 1333px;
+			margin: auto;
+		}
+		
+		.nav{
+			margin-top: -20px;
+			width: 1333px;
+			height:100px;
+			background-color: #b8d2e5;
+			border-bottom: double #142D4F;
+			position: fixed;
+			z-index: 999;
+			opacity: 0.8;
+		}
+		
+		.logos{
+			margin-left: -700px;
+			margin-top: -30px;
+		}
+		.logo{
+			margin-left: 25px;
+			padding-top: 15px;
+			height: 60px;
+		}
+		
+		ul{	
+			list-style-type: none;
+			padding-left: 690px;
+		}
+	
+		li{
+			float: left;
+			padding-top: 30px;
+		}
+		
+		a{
+			text-decoration: none;
+			color: #000000;
+			font-size: 25px;
+			padding-left: 25px;
+			font-family: Titillium Web, sans-serif;
+			/*transition:  height 4s;*/
+		}
+		
+		a:hover{
+			color: #224a86;
+		}
+		
+		.wedding{
+			font-family: Dancing Script, cursive;
+			font-size: 70px;
+			margin-left: 310px;
+			margin-bottom: -400px;
+			padding-top:40px;
+		}
+		
+		.himg{
+			position: relative;
+			z-index: -1;
+			margin-top: 180px;
+		}
+		
+		.couple{
+			width: 1010px;
+			height: 825px;
+			background-color: #e1eef4;
+			margin-left: 150px;
+			margin-top: 80px;
+			font-family: Titillium Web, sans-serif;
+			opacity: 0.9;
+			margin-bottom: 20px;
+		}
+		
+		.couple:hover{
+			box-shadow: 5px 5px 5px 5px gray;
+			opacity: 1;
+			
+		}
+		
+		.detailsG{
+			margin-top: 80px;
+			opacity: 0.9;
+			
+		}
+		
+		.detailsG:hover{
+			box-shadow: 5px 5px 5px 5px gray;
+			opacity: 1;
+			transition: 2s;
+		}
+		
+		.groom{
+			padding-left: 450px;
+			margin-top: -350px;
+			color: #161515;
+		}
+		
+		.g:hover{
+			color: darkcyan;
+			text-shadow: 2px 2px;
+		}
+		
+		.groomD{
+			padding-left: 450px;
+			margin-top: 30px;
+			color: #161515;
+			font-size: 18px;
+		}
+		
+		.groomS{
+			font-family: Dancing Script, cursive;
+			padding-left: 450px;
+			margin-top: 20px;
+			color: #161515;
+		}
+		
+		.groomsocialg{
+			padding-left: 460px;	
+		}
+		
+		.groomsocialf{
+			padding-left: -350px;	
+		}
+		
+		.groomsocialt{
+			margin-left: -35px;	
+		}
+		
+		.groomsocialp{
+			margin-left: -45px;
+		}
+		
+		.detailsB{
+			margin-top: 10px;
+			margin-left: 422px;
+			opacity: 0.9;
+		}
+		
+		.detailsB:hover{
+			box-shadow: 5px 5px 5px 5px gray;
+			opacity: 1;
+			transition: 2s;
+		}
+		
+		.bride{
+			padding-left: 20px;
+			margin-top: -350px;
+			color: #161515;
+		}
+		
+		.bride:hover{
+			color: darkcyan;
+			text-shadow: 2px 2px;
+		}
+		
+		.brideD{
+			padding-left: 20px;
+			margin-top: 30px;
+		}
+		
+		.brideS{
+			font-family: Dancing Script, cursive;
+			padding-left: 20px;
+			margin-top: 20px;
+			color: #161515;
+		}
+		
+		.bridesocialg{
+			margin-left: 20px;
+		}
+		
+		.bridesocialf{
+			margin-left: -20px;
+		}
+		
+		.bridesocialt{
+			margin-left: -40px;
+		}
+		
+		.bridesocialp{
+			margin-left: -45px;
+		}
+		
+		.story{
+			background-color: #e1eef4;
+			border-bottom: solid #5174BB;
+			border-top: solid #5174BB;
+			font-family: Dancing Script, cursive;
+			width: 350px;
+			height: 80px;
+			text-align: justify-all;	
+			margin-left: 450px;
+			padding-left: 70px;
+			margin-top: 0px;
+			font-size: 50px;
+			padding-top: 20px;
+		}
+		
+		.firstmeetingD{
+			height: 300px;
+			width: 650px;
+			margin-top: 120px;
+			font-family: Titillium Web, sans-serif;
+			color: darkcyan;
+			
+		}
+		
+		.firstmeetingD h4{
+			color: #000000;
+			margin-top: -20px;
+			margin-left: 530px
+		}
+		
+		.firstimg{
+			height: 380px;
+			width: 650px;
+			margin-left: 670px;
+			margin-top: -300px;
+			border-left: groove #E1EEF4;
+			
+		}
+		
+		.firstdate{
+			height: 400px;
+			width: 650px;
+		}
+		
+		.firstdateD{
+			height: 400px;
+			width: 650px;
+			margin-top: -410px;
+			margin-left: 670px;
+			font-family: Titillium Web, sans-serif;
+			color: darkcyan;
+			border-top: groove #E1EEF4;
+			border-left:  groove #E1EEF4;
+		}
+		
+		.firstdateD h4{
+			color: #000000;
+			margin-top: -20px;
+			margin-left: 50px
+		}
+		
+		.proposal{
+			height: 450px;
+			width: 650px;	
+			margin-left: 20px;
+			font-family: Titillium Web, sans-serif;
+			color: darkcyan;
+			border-top: groove #E1EEF4;
+			border-right:  groove #E1EEF4;
+		}
+		
+		.proposal h4{
+			color: #000000;
+			margin-top: -20px;
+			margin-left: 520px
+		}
+		
+		.proposalimg{
+			height: 450px;
+			width: 650px;
+			margin-left: 690px;
+			margin-top: -400px;	
+		}
+		
+		.engagmentD{
+			height: 370px;
+			width: 650px;
+			margin-top: -350px;
+			margin-left: 670px;
+			font-family: Titillium Web, sans-serif;
+			color: darkcyan;
+			border-top: groove #E1EEF4;
+			border-left:  groove #E1EEF4;
+		}
+		
+		.engagmentD h4{
+			color: #000000;
+			margin-top: -20px;
+			margin-left: 50px
+		}
+		
+		.event{
+			background-color: #e1eef4;
+			border-bottom: solid #5174BB;
+			border-top: solid #5174BB;
+			font-family: Dancing Script, cursive;
+			width: 430px;
+			height: 80px;
+			text-align: justify-all;	
+			margin-left: 390px;
+			padding-left: 110px;
+			margin-top: 0px;
+			font-size: 50px;
+			padding-top: 20px;
+		}
+		
+		.eventimgR{
+			margin-left: 210px;
+			margin-top: 50px;
+		}
+		
+		.eventimgRD{
+			height: 370px;
+			width: 650px;
+			margin-top: -280px;
+			margin-left: 590px;
+			font-family: Titillium Web, sans-serif;
+			color: #000000;
+		}
+		
+		.partyimgR{
+			width: 380px;
+			margin-left: 200px;
+			margin-top: -50px;
+			padding-left: 10px;
+		}
+		
+		.partyimgRD h2{
+			margin-left: 650px;
+			margin-top: -250px;
+			color: #000000;
+			font-family: Titillium Web, sans-serif;
+		}
+		
+		.GB{
+			height: 1400px;
+			margin-top: 150px;
+			background-color: #f9f9f9;
+		}
+		
+		.groombride{
+			background-color: #e1eef4;
+			border-bottom: solid #5174BB;
+			border-top: solid #5174BB;
+			font-family: Dancing Script, cursive;
+			width: 500px;
+			height: 80px;
+			text-align: justify-all;	
+			margin-left: 390px;
+			padding-left: 10px;
+			margin-top: 0px;
+			font-size: 50px;
+			padding-top: 20px;
+		}
+		
+		.groombox{
+			width: 180px;
+			height: 40px;
+			margin-left: 470px;
+			background-color: #88B8FF;
+			margin-top: 50px;
+			font-family: Titillium Web, sans-serif;
+			color: #000000;
+			font-size: 25px;
+			padding-left: -20px;
+		}
+		
+		.bridebox{
+			width: 170px;
+			height: 40px;
+			margin-left: 650px;
+			background-color: #6CA3F8;
+			margin-top: -65px;
+			font-family: Titillium Web, sans-serif;
+			color: #000000;
+			font-size: 25px;
+			padding-left: -30px;
+		}
+		
+		/* People (Groom Details) */
+		
+		.groom1{
+			width: 360px;
+			height: 400px;
+			background: #FFFFFF;
+			margin-top: 60px;
+			margin-left: 100px;
+			 /*transition: transform .8s; */
+			transition   : all .3s;
+		}
+		
+		/* .img-g1:hover{
+			transform: rotate(20deg);
+			transition   : all .3s;
+		} */
+		
+		.groom1:hover{ 
+			background-color: #e1eef4;
+			/*transform: rotate(10deg);*/
+			transform :scale(1.1); 
+			box-shadow: 5px 5px 4px 2px gray;
+		}
+		
+		.groom2{
+			width: 360px;
+			height: 400px;
+			background: #FFFFFF;
+			margin-top: -400px;
+			margin-left: 480px;
+			transition: transform .8s;
+		}
+		
+		.groom2:hover{ 
+			background-color: #e1eef4;
+			transform :scale(1.1); 
+			box-shadow: 5px 5px 4px 2px gray;
+		}
+		
+		.groom3{
+			width: 360px;
+			height: 400px;
+			background: #FFFFFF;
+			margin-top: -400px;
+			margin-left: 860px;
+			transition: transform .8s;
+		}
+		
+		.groom3:hover{ 
+			background-color: #e1eef4;
+			transform :scale(1.1); 
+			box-shadow: 5px 5px 4px 2px gray;
+		}
+		
+		.groom4{
+			width: 360px;
+			height: 400px;
+			background: #FFFFFF;
+			margin-top: 50px;
+			margin-left: 100px;
+			transition: transform .8s;
+		}
+		
+		.groom4:hover{ 
+			background-color: #e1eef4;
+			transform :scale(1.1); 
+			box-shadow: 5px 5px 4px 2px gray;
+		}
+		
+		.groom5{
+			width: 360px;
+			height: 400px;
+			background: #FFFFFF;
+			margin-top: -400px;
+			margin-left: 480px;
+			transition: transform .8s;
+		}
+		
+		.groom5:hover{ 
+			background-color: #e1eef4;
+			transform :scale(1.1); 
+			box-shadow: 5px 5px 4px 2px gray;
+		}
+		
+		.groom6{
+			width: 360px;
+			height: 400px;
+			background: #FFFFFF;
+			margin-top: -400px;
+			margin-left: 860px;
+			transition: transform .8s;
+		}
+		
+		.groom6:hover{ 
+			background-color: #e1eef4;
+			transform :scale(1.1); 
+			box-shadow: 5px 5px 4px 2px gray;
+		}
+		
+		.Gallery{
+			margin-top: 50px;
+		}
+		
+		.photos{
+			background-color: #e1eef4;
+			border-bottom: solid #5174BB;
+			border-top: solid #5174BB;
+			font-family: Dancing Script, cursive;
+			width: 280px;
+			height: 80px;
+			text-align: justify-all;	
+			margin-left: 470px;
+			padding-left: 40px;
+			margin-top: 0px;
+			font-size: 50px;
+			padding-top: 20px;
+		}
+		
+		.p1{
+			margin-left: 100px;
+			margin-top: 90px;
+		}
+		
+		.p2{
+			margin-top: -200px;
+			margin-left: 480px;
+		}
+		
+		.p3{
+			margin-top: -330px;
+			margin-left: 860px;
+		}
+		
+		.p4{
+			margin-left: 100px;
+		}
+		
+		.p5{
+			margin-left: 100px;
+			margin-top:-80px;
+		}
+		
+		.p6{
+			margin-left: 860px;
+			margin-top: -600px;
+		}
+		
+		.p7{
+			margin-left: 480px;
+			margin-top: -600px;
+		}
+		
+		.joinourparty{
+			margin-top: 150px;
+		}
+		
+		.lastimg{
+			background-color: #A0A0A0;
+			border-bottom: solid #FFFCFC;
+			border-top: solid #FFFCFC;
+			font-family: Dancing Script, cursive;
+			width: 430px;
+			height: 80px;
+			text-align: justify-all;	
+			margin-left: 390px;
+			padding-left: 110px;
+			margin-top: -890px;
+			font-size: 70px;
+			padding-top: 20px;
+		}
+		
+		.lastimg p{
+			color: #FFFFFF;
+		}
+		
+		.last{
+			height: 900px;
+			background-color: #98CCE3;
+			padding-top: 10px;
+			margin-bottom: 30px;
+		}
+		
+		.Getting{
+			background-color: #e1eef4;
+			height: 100px;
+			width: 300px;
+			margin-top: 250px;
+			margin-left: 500px;
+			border-bottom: solid #5174BB;
+			border-top: solid #5174BB;
+		}
+		
+		.Getting p {
+			font-family: Dancing Script, cursive;
+			font-size: 40px;
+			margin-left: 50px;
+			margin-top: 26px;	
+		} 
+		
+		.trans{
+			margin-top: 100px;
+			border-right: #85C6E3 solid;
+			width: 650px;
+			height: 400px;
+			font-family: Titillium Web, sans-serif;
+			color: #FFFFFF;
+			font-size: 25px;
+		}
+		
+		.acco{
+			margin-top: -406px;
+			margin-left: 655px;
+			width: 650px;
+			height: 400px;
+			font-family: Titillium Web, sans-serif;
+			color: #FFFFFF;
+			font-size: 25px;
+		}
+		
+	</style>
+<body>
+	
+<div class="wrapper">
+	<div class="nav">
+		<ul>
+			<li class="logos"><img src="img/logo-b.jpg" class="logo"></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#the">Couple</a></li>
+			<li><a href="#story">Story</a></li>
+			<li><a href="#event">Events</a></li>
+			<li><a href="#people">People</a></li>
+			<li><a href="#gallery">Gallery</a></li>
+		</ul>
+	</div>
+	
+	
+		<div class="wedding">
+			<p>Wedding Bells...</p>
+		</div>
+		
+		<div class="himg">
+			<img src="img/Sunshine-Coast-Wedding-Photographers.jpg">
+		</div>
+	
+	<div class="couple" id="the">
+			<div class="detailsG"><img src="img/should-my-groom-wear-a-tuxedo.jpg"></div>
+			<h1 class="groom" >THE GROOM</h1>
+			<p class="groomD">Hi I am suntina , dummy text of the printing and typesetting <br>industry. Lorem Ipsum has been the industry's standard dummy<br> text ever since the 1500s, when an unknown printer took a galley of <br>type and scrambled it to make a type specimen book. It has <br>survived not only five centuries.</p>
+			<h1 class="groomS">- Suntina</h1>
+			<a href="#home"><img src="img/google-plus1.png" class="groomsocialg"></a>
+			<a href="#home"><img src="img/facebook1.png" class="groomsocialf"></a>
+			<a href="#home"><img src="img/twitter1.png" class="groomsocialt"></a>
+			<a href="#home"><img src="img/pinterest1.png" class="groomsocialp">	</a>
+	
+	
+	<div class="detailsB">
+			<img src="img/bride1.jpg">
+		</div>
+		<div>
+			<h1 class="bride">THE BRIDE</h1>
+			<p class="brideD">Hi I am suntina , dummy text of theprinting and<br>typesetting industry. Lorem Ipsum has been the industry's<br> standard dummy text ever since the 1500s, when an unk-<br>nown printer took a galley oftype and scrambled it to make<br>a type specimen book. It has survived not only <br>five centuries.</p>
+			<h1 class="brideS">- Famico</h1>
+			<a href="#home"><img src="img/google-plus1.png" class="bridesocialg"></a>
+			<a href="#home"><img src="img/facebook1.png" class="bridesocialf"></a>
+			<a href="#home"><img src="img/twitter1.png" class="bridesocialt"></a>
+			<a href="#home"><img src="img/pinterest1.png" class="bridesocialp"></a>	
+	</div>
+</div>	
+	
+	<div style="margin-top: 200px">
+		<img src="img/adventure.PNG" style="width: 1340px;">
+	</div>
+	
+	<div id="story" style="margin-left: 600px;margin-top: 150px">
+		<img src="img/birds.PNG" style="height: 130px;width: 130px">
+	</div>
+	
+	<div class="story" >
+		<span>Our Love Story</span>
+	</div>
+
+	<div class="firstmeetingD">
+			<h2 style="margin-left: 490px;">FIRST MEET</h2>
+			<h4>Jan 12 2017</h4>
+			<p style="margin-left: 150px;color: #7A7272;font-size: 17px">A wonderful serenity has taken possession of my entire soul, like</p>
+			<p style="margin-left: 180px;color: #7A7272;font-size: 17px;margin-top: -15px;">these sweet mornings of spring which I enjoy with my whole</p>
+			<p style="margin-left: 175px;color: #7A7272;font-size: 17px;margin-top: -15px;">heart. I am alone, and feel the charm of existence in this spot,</p>
+			<p style="margin-left: 155px;color: #7A7272;font-size: 17px;margin-top: -15px;">which was created for the bliss of souls like mine. I am so happy,</p>
+			<p style="margin-left: 505px;color: #7A7272;font-size: 17px;margin-top: -15px;">my dear friend,</p>
+	</div>
+	
+	<div class="firstimg">
+			<img src="img/firstmeeting.PNG" style="margin-left: 50px;margin-top: 10px;box-shadow: 5px 5px 5px 5px gray;opacity: 1;transition: 2s;">
+	</div>
+	
+	<div class="firstdate">
+			<img src="img/firstdate.PNG" style="margin-left: 160px;margin-top:40px;box-shadow: 5px 5px 5px 5px gray;opacity: 1;transition: 2s;">
+			<!--img src="firstmeeting.PNG"-->	
+	</div>
+	
+	<div class="firstdateD">
+		<img src="img/heart-ls.PNG" style="margin-top: -25px;margin-left: -30px;">
+		<h2 style="margin-left: 50px;margin-top: 30px">FIRST DATE</h2>
+		<h4>Feb 14 2017</h4>
+		<p style="margin-left: 50px;color: #7A7272;font-size: 17px;">A wonderful serenity has taken possession of my entire soul, like</p>
+		<p style="margin-left: 50px;color: #7A7272;font-size: 17px;margin-top: -15px;">these sweet mornings of spring which I enjoy with my whole</p>
+		<p style="margin-left: 50px;color: #7A7272;font-size: 17px;margin-top: -15px;">heart. I am alone, and feel the charm of existence in this spot,</p>
+		<p style="margin-left: 50px;color: #7A7272;font-size: 17px;margin-top: -15px;">which was created for the bliss of souls like mine. I am so happy,</p>
+		<p style="margin-left: 50px;color: #7A7272;font-size: 17px;margin-top: -15px;">my dear friend,</p>
+	</div>
+	
+	<div class="proposal">
+			<img src="img/heart-ls.PNG" style="margin-top: -25px;margin-left: 625px;">
+			<h2 style="margin-left: 490px;">PROPOSAL</h2>
+			<h4>Apr 14 2017</h4>
+			<p style="margin-left: 150px;color: #7A7272;font-size: 17px">A wonderful serenity has taken possession of my entire soul, like</p>
+			<p style="margin-left: 180px;color: #7A7272;font-size: 17px;margin-top: -15px;">these sweet mornings of spring which I enjoy with my whole</p>
+			<p style="margin-left: 175px;color: #7A7272;font-size: 17px;margin-top: -15px;">heart. I am alone, and feel the charm of existence in this spot,</p>
+			<p style="margin-left: 155px;color: #7A7272;font-size: 17px;margin-top: -15px;">which was created for the bliss of souls like mine. I am so happy,</p>
+			<p style="margin-left: 505px;color: #7A7272;font-size: 17px;margin-top: -15px;">my dear friend,</p>
+	</div>
+	
+	<div class="proposalimg">
+			<img src="img/praposal1.PNG" style="margin-left: 50px;margin-top: 10px;box-shadow: 5px 5px 5px 5px gray;opacity: 1;transition: 2s;">
+	</div>
+	
+	<div>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/TOjCwHDkrpE"  style="margin-left: 70px;box-shadow: 5px 5px 5px 5px gray;opacity: 1;transition: 2s;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	
+	<div class="engagmentD">
+		<img src="img/heart-ls.PNG" style="margin-top: -25px;margin-left: -30px;">
+		<h2 style="margin-left: 50px;margin-top: 30px">ENGAGMENT</h2>
+		<h4>Jul 14 2017</h4>
+		<p style="margin-left: 50px;color: #7A7272;font-size: 17px;">A wonderful serenity has taken possession of my entire soul, like</p>
+		<p style="margin-left: 50px;color: #7A7272;font-size: 17px;margin-top: -15px;">these sweet mornings of spring which I enjoy with my whole</p>
+		<p style="margin-left: 50px;color: #7A7272;font-size: 17px;margin-top: -15px;">heart. I am alone, and feel the charm of existence in this spot,</p>
+		<p style="margin-left: 50px;color: #7A7272;font-size: 17px;margin-top: -15px;">which was created for the bliss of souls like mine. I am so happy,</p>
+		<p style="margin-left: 50px;color: #7A7272;font-size: 17px;margin-top: -15px;">my dear friend,</p>
+	</div>
+	
+	<div style="margin-top: 100px">
+		<img src="img/celebratw.PNG" style="width: 1340px;">
+	</div>
+	
+	<div id="event" style="margin-left: 590px;margin-top: 150px">
+		<img src="img/birds.PNG" style="height: 130px;width: 130px">
+	</div>
+	
+	<div class="event" >
+		<span>Wedding Events</span>
+	</div>
+	
+	<div class="eventimgR">
+		<img src="img/reception.PNG">
+	</div>
+	
+	<div class="eventimgRD">
+		<h2 style="margin-left: 50px;margin-top: 30px">THE RECEEPTION</h2>
+		<img src="img/location.png" style="margin-left: 50px">
+		<p style="margin-left: 90px;margin-top: -30px;color: #7A7272;font-size: 17px;">32 big bro road, Chanpai, London.</p>
+		<img src="img/watch.png" style="margin-left: 50px;margin-top: -10px">
+		<p style="margin-left: 90px;margin-top: -35px;color: #7A7272;font-size: 17px;">Nov 25 2017, 9AM - 5PM</p>
+		<p style="margin-left: 50px;margin-top: -10px;color: #7A7272;font-size: 17px;">when an unknown printer took a galley of type and scrambled it to make a</p>
+		<p style="margin-left: 50px;margin-top: -10px;color: #7A7272;font-size: 17px;">type specimen book. It has survived not only five centuries, but also the leap</p>
+		<p style="margin-left: 50px;margin-top: -10px;color: #7A7272;font-size: 17px;">into electronic typesetting, remaining essentially unchanged.</p>
+	</div>
+	
+	<div class="partyimgR">
+		<img src="img/wedding_party.PNG">
+	</div>
+	
+	<div class="partyimgRD">
+		<h2>WEDDING PARTY</h2>
+		<img src="img/location.png" style="margin-left: 650px">
+		<p style="margin-left: 690px;margin-top: -25px;color: #7A7272;font-size: 17px;">32 big bro road, Chanpai, London.</p>
+		<img src="img/watch.png" style="margin-left: 650px;margin-top: -10px">
+		<p style="margin-left: 690px;margin-top: -25px;color: #7A7272;font-size: 17px;">Nov 25 2017, 9AM - 5PM</p>
+		<p style="margin-left: 650px;margin-top: -5px;color: #7A7272;font-size: 19px;">when an unknown printer took a galley of type and scrambled it to make a</p>
+		<p style="margin-left: 650px;margin-top: -10px;color: #7A7272;font-size: 17px;">type specimen book. It has survived not only five centuries, but also the leap</p>
+		<p style="margin-left: 650px;margin-top: -10px;color: #7A7272;font-size: 17px;">into electronic typesetting, remaining essentially unchanged.</p>
+	</div>
+	
+	<div class="GB" id="people">
+		<div id="GBi">
+			<img src="img/color-bird.png" style="margin-left:580px;margin-top: 80px">
+		</div>
+		
+		<div class="groombride">
+			<span>Groomsmen & Bridesmaid</span>
+	</div>
+		<div class="groombox">
+			<p><a href="#people">Groomsmen</a></p>
+		</div>
+		<div class="bridebox">
+			<p><a href="bridesmaid.html">Bridesmaid</a></p>
+		</div>
+		
+		<div class="groom1">
+				<img src="img/g1.PNG">
+			<div>
+				<h2 style="font-family: Titillium Web, sans-serif;color: #393636;text-align: center;font-size: 17px">JHON MICHEL</h2>
+				<p style="font-family: Titillium Web, sans-serif;color: #5B5656;text-align: center;margin-top: -10px">Best Man</p>
+			</div>
+		</div>
+		
+		<div class="groom2">
+			<img src="img/g2.PNG">
+			<div>
+				<h2 style="font-family: Titillium Web, sans-serif;color: #393636;text-align: center;font-size: 17px">CHASMOOS JHON</h2>
+				<p style="font-family: Titillium Web, sans-serif;color: #5B5656;text-align: center;margin-top: -10px">Best Friend</p>
+			</div>
+		</div>
+		
+		<div class="groom3">
+			<img src="img/g3.PNG">
+			<div>
+				<h2 style="font-family: Titillium Web, sans-serif;color: #393636;text-align: center;font-size: 17px">KAISTE PATE</h2>
+				<p style="font-family: Titillium Web, sans-serif;color: #5B5656;text-align: center;margin-top: -10px">Friend</p>
+			</div>
+		</div>
+		
+		<div class="groom4">
+			<img src="img/g4.PNG">
+			<div>
+				<h2 style="font-family: Titillium Web, sans-serif;color: #393636;text-align: center;font-size: 17px">HATU MICHEL</h2>
+				<p style="font-family: Titillium Web, sans-serif;color: #5B5656;text-align: center;margin-top: -10px">Friend</p>
+			</div>
+		</div>
+		
+		<div class="groom5">
+			<img src="img/g5.PNG">
+			<div>
+				<h2 style="font-family: Titillium Web, sans-serif;color: #393636;text-align: center;font-size: 17px">MICHEL DOIN</h2>
+				<p style="font-family: Titillium Web, sans-serif;color: #5B5656;text-align: center;margin-top: -10px">Friend</p>
+			</div>
+		</div>
+		
+		<div class="groom6">
+			<img src="img/g6.PNG">
+			<div>
+				<h2 style="font-family: Titillium Web, sans-serif;color: #393636;text-align: center;font-size: 17px">TOPPER JONE</h2>
+				<p style="font-family: Titillium Web, sans-serif;color: #5B5656;text-align: center;margin-top: -10px">Friend</p>
+			</div>
+		</div>
+		
+	</div>
+	
+	<div class="Gallery" id="gallery">
+		<div >
+			<img src="img/birds.PNG" style="margin-left:580px;margin-top: 80px">
+		</div>
+		
+		<div class="photos">
+			<span>Our Gallery</span>
+	</div>
+		
+		<img src="img/gallery3.PNG" class="p1">
+		<div>
+		<img src="img/gallery4.PNG" class="p2">
+		</div>
+		
+		<div>
+			<img src="img/gallery5.PNG" class="p3">
+		</div>
+		<div>
+			<img src="img/gallery6.PNG" class="p5">
+		</div>
+		<div>
+			<img src="img/gallery8.PNG" class="p6">
+		</div>
+		
+		<div>
+			<img src="img/gallery7.PNG" class="p7">
+		</div>
+		
+		</div>
+	
+	<div class="joinourparty">
+			<img src="img/Sunshine-Coast-Wedding-Photographers2.png">
+		</div>
+	
+	<div class="lastimg" >
+		<p>Join our Party</p>
+	</div>
+	
+	<div>
+		<p style="color: #FFFFFF;margin-left: 200px;font-size: 20px;margin-top: 160px;">Please reserve before December 16th, 2017.</p>
+	</div>
+	
+	<div>
+		<form>
+			<input type="text" name="Your Name" placeholder="Your Name*" style="margin-left: 200px;margin-top: 20px;height: 60px;width: 390px;border-radius: 5px;padding-left: 20px">
+			
+			<input type="text" name="Your Email" placeholder="Your Email*" style="margin-left: 80px;height: 60px;width: 390px;border-radius: 5px;padding-left: 20px">	
+			
+			<input type="text" name="Your Email" placeholder="Number of Guest*" style="margin-left: 200px;margin-top: 20px;height: 60px;width: 390px;border-radius: 5px;padding-left: 20px">
+			
+			<select  name="I Am attending*" style="margin-left: 80px;height: 60px;width: 415px;border-radius: 5px;padding-left: 20px">
+					<option value="I Am attending*">I Am attending*</option>
+      				<option value="AI Events">AI Events</option>
+      				<option value="Wedding Cereomany">Wedding Cereomany</option>
+      				<option value="Reception Party">Reception Party</option>
+    		</select>
+  
+			<textarea type="text" name="Your Email" rows="5" cols="50" title="Your Message*" placeholder="Your Message*" style="margin-left: 200px;margin-top: 20px;height: 160px;width: 890px;border-radius: 5px;padding-left: 20px">
+			</textarea>
+			
+			<input type="button" name="SEND INVITATION" value="SEND INVITATION" style="background-color: #e1eef4;margin-left: 570px;margin-top: 40px;height: 40px;width: 150px;border-radius: 5px;padding-left: 20px;color: #000000;padding-left: 10px">
+			
+		</form>
+	
+	</div>
+	
+	<div class="last">
+		<div class="Getting" >
+		<p>Getting There</p>
+	</div>
+		<div class="trans">
+			<h2 style="padding-left: 330px;padding-top: 25px;">Transportation</h2>
+			<p style="font-size: 17px;padding-left: 50px">industry's standard dummy text ever since the 1500s, when an unknown</p>
+			<p style="font-size: 17px;padding-left: 70px">printer took a galley of type and scrambled it to make a type specimen</p>
+			<p style="font-size: 17px;padding-left: 105px">book. It has survived not only five centuries, but also the leap into</p>
+			<p style="font-size: 17px;padding-left: 120px">electronic typesetting, remaining essentially unchanged. It was</p>
+			<p style="font-size: 17px;padding-left: 390px">popularised in the 1960s</p>
+		</div>	
+		
+		<div class="acco">
+			<h2 style="padding-left: 80px;">Accommodations</h2>
+			<p style="font-size: 17px;padding-left: 80px">industry's standard dummy text ever since the 1500s, when an unknown</p>
+			<p style="font-size: 17px;padding-left: 80px">printer took a galley of type and scrambled it to make a type specimen</p>
+			<p style="font-size: 17px;padding-left: 80px">book. It has survived not only five centuries, but also the leap into</p>
+			<p style="font-size: 17px;padding-left: 80px">electronic typesetting, remaining essentially unchanged. It was</p>
+			<p style="font-size: 17px;padding-left: 80px">popularised in the 1960s</p>
+		</div>
+	</div>
+</div>	
+</body>
+</html>
